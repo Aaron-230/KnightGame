@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq6p357w237l6"
-path="res://.godot/imported/spring_.png-e3cdd5f80d1788077e2e08690ca749bb.ctex"
+uid="uid://d03um2om5sjh5"
+path="res://.godot/imported/platforms.png-d76428112d54b75a09499768b021887a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/Midground/spring_.png"
-dest_files=["res://.godot/imported/spring_.png-e3cdd5f80d1788077e2e08690ca749bb.ctex"]
+source_file="res://Assets/Tileset/Objects/platforms.png"
+dest_files=["res://.godot/imported/platforms.png-d76428112d54b75a09499768b021887a.ctex"]
 
 [params]
 

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dfnxyrya62mow"]
+
+[ext_resource type="Script" uid="uid://bch4bl1po6atl" path="res://Scripts/UI/HUD.gd" id="1_omqfp"]
+[ext_resource type="FontFile" uid="uid://x6cp1ifynolo" path="res://Assets/UI/Font/BoldPixels/boldpixels.ttf" id="2_qc5w2"]
+
+[node name="HUD" type="CanvasLayer" unique_id=338940241]
+script = ExtResource("1_omqfp")
+
+[node name="CoinMeter" type="Label" parent="." unique_id=1792402322]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 203.0
+offset_bottom = 60.0
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("2_qc5w2")
+theme_override_font_sizes/font_size = 56
+text = "Coins: 0"

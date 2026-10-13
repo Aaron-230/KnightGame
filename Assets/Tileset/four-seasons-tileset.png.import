@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkiyi6jcr504i"
-path="res://.godot/imported/blackout_.png-7ecf8d83a15b4fddbec7a5c95f5aa972.ctex"
+uid="uid://cavgule7wts0u"
+path="res://.godot/imported/four-seasons-tileset.png-1a9f6cd97d08b4c18e64c864cae9328b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/Midground/blackout_.png"
-dest_files=["res://.godot/imported/blackout_.png-7ecf8d83a15b4fddbec7a5c95f5aa972.ctex"]
+source_file="res://Assets/Tileset/four-seasons-tileset.png"
+dest_files=["res://.godot/imported/four-seasons-tileset.png-1a9f6cd97d08b4c18e64c864cae9328b.ctex"]
 
 [params]
 
