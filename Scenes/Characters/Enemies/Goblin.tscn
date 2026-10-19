@@ -183,9 +183,8 @@ size = Vector2(20, 15)
 [node name="Goblin" type="CharacterBody2D" unique_id=2005260953]
 script = ExtResource("1_g3ot0")
 SPEED = 100.0
-JUMP_VELOCITY = -80.0
+JUMP_VELOCITY = -60.0
 HEALTH_POINTS = 50.0
-DAMAGE = 10.0
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1224356934]
 sprite_frames = SubResource("SpriteFrames_oybhc")

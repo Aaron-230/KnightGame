@@ -8,4 +8,7 @@ func addCoins(value):
 
 func resetGame():
 	Coins = 0
-	get_tree().reload_current_scene()
+	Health = 100
+
+func resetHealth():
+	Health = 100
