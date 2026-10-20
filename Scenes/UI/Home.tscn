@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b4g54i1imo14v"]
+
+[ext_resource type="FontFile" uid="uid://x6cp1ifynolo" path="res://Assets/UI/Font/BoldPixels/boldpixels.ttf" id="1_631u7"]
+[ext_resource type="Script" uid="uid://c5parofc061ft" path="res://Scenes/UI/Home.gd" id="1_ch3e0"]
+
+[node name="Home" type="Control" unique_id=1293754489]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ch3e0")
+
+[node name="Panel" type="Panel" parent="." unique_id=1447079879]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Container" type="VBoxContainer" parent="Panel" unique_id=2060752742]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Logo" type="TextureRect" parent="Panel/Container" unique_id=1561897117]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="Panel/Container" unique_id=644455328]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_631u7")
+theme_override_font_sizes/font_size = 32
+text = "Start Game"
+
+[node name="Exit" type="Button" parent="Panel/Container" unique_id=769494899]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_631u7")
+theme_override_font_sizes/font_size = 32
+text = "Exit Game"
+
+[connection signal="pressed" from="Panel/Container/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Panel/Container/Exit" to="." method="_on_exit_pressed"]

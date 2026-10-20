@@ -126,8 +126,6 @@ position = Vector2(3200, -152)
 [node name="Coin15" parent="Coins" unique_id=794781440 instance=ExtResource("4_jrtxw")]
 position = Vector2(3328, -152)
 
-[node name="HUD" parent="." unique_id=376237252 instance=ExtResource("5_1hdcq")]
-
 [node name="Killzone" type="Area2D" parent="." unique_id=2131456979]
 script = ExtResource("6_lje5a")
 
@@ -138,5 +136,13 @@ shape = SubResource("WorldBoundaryShape2D_oybhc")
 
 [node name="Goblin" parent="Enemies" unique_id=2005260953 instance=ExtResource("7_1yd5k")]
 position = Vector2(1376, 208)
+
+[node name="Goblin2" parent="Enemies" unique_id=90082280 instance=ExtResource("7_1yd5k")]
+position = Vector2(2744, -15)
+
+[node name="Goblin3" parent="Enemies" unique_id=2109727026 instance=ExtResource("7_1yd5k")]
+position = Vector2(3381, -164)
+
+[node name="HUD" parent="." unique_id=376237252 instance=ExtResource("5_1hdcq")]
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
