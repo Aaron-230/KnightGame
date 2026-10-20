@@ -1,6 +1,6 @@
 extends Control
 
-@export_file(".tscn") var nextScene: String
+@export_file("*.tscn") var nextScene: String
 
 func _on_start_pressed() -> void:
 	if nextScene != "":

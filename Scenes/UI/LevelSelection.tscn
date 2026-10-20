@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://drp65eapsnfu8"]
+
+[ext_resource type="FontFile" uid="uid://x6cp1ifynolo" path="res://Assets/UI/Font/BoldPixels/boldpixels.ttf" id="1_bodif"]
+[ext_resource type="Script" uid="uid://sigsvn4kcv82" path="res://Scripts/UI/LevelSelection.gd" id="2_m2yfs"]
+
+[node name="Level" type="Control" unique_id=1350862919]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=696795316]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Container" type="VBoxContainer" parent="Panel" unique_id=954255612]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.5
+offset_top = -20.0
+offset_right = 50.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Container" unique_id=1902196548]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bodif")
+theme_override_font_sizes/font_size = 64
+text = "Select Level!"
+
+[node name="Selection" type="HBoxContainer" parent="Panel/Container" unique_id=1777138023]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 10
+script = ExtResource("2_m2yfs")
+
+[node name="Tutorial" type="Button" parent="Panel/Container/Selection" unique_id=550668386]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bodif")
+theme_override_font_sizes/font_size = 20
+text = "Tutorial"
+
+[node name="1" type="Button" parent="Panel/Container/Selection" unique_id=284623382]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bodif")
+theme_override_font_sizes/font_size = 20
+text = "Level 1"
+
+[node name="2" type="Button" parent="Panel/Container/Selection" unique_id=529028529]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bodif")
+theme_override_font_sizes/font_size = 20
+text = "Level 2"
+
+[node name="3" type="Button" parent="Panel/Container/Selection" unique_id=977706858]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bodif")
+theme_override_font_sizes/font_size = 20
+text = "Level 3"
+
+[connection signal="pressed" from="Panel/Container/Selection/Tutorial" to="Panel/Container/Selection" method="_on_tutorial_pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/1" to="Panel/Container/Selection" method="_on__pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/2" to="Panel/Container/Selection" method="_on__pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/3" to="Panel/Container/Selection" method="_on__pressed"]

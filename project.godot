@@ -12,6 +12,7 @@ config_version=5
 
 config/name="Knight Game"
 config/tags=PackedStringArray("in_development")
+run/main_scene="uid://b4g54i1imo14v"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [autoload]

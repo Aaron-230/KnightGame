@@ -55,14 +55,14 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 
 func takeDamage(value):
-	if isAlive:
+	if HEALTH_POINTS > 0.0:
 		HEALTH_POINTS -= value
 		Sprite.play("Hit")
 		await Sprite.animation_looped
-	
-	if HEALTH_POINTS <= 0.0:
+	else:
 		isAlive = false
 		canAttack = false
+		Target = null
 		Sprite.play("Death")
 		await Sprite.animation_finished
 		await get_tree().create_timer(1).timeout

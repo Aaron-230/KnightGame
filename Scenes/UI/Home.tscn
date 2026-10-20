@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b4g54i1imo14v"]
 
 [ext_resource type="FontFile" uid="uid://x6cp1ifynolo" path="res://Assets/UI/Font/BoldPixels/boldpixels.ttf" id="1_631u7"]
-[ext_resource type="Script" uid="uid://c5parofc061ft" path="res://Scenes/UI/Home.gd" id="1_ch3e0"]
+[ext_resource type="Script" uid="uid://c5parofc061ft" path="res://Scripts/UI/Home.gd" id="1_ch3e0"]
 
 [node name="Home" type="Control" unique_id=1293754489]
 layout_mode = 3
@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ch3e0")
+nextScene = "uid://drp65eapsnfu8"
 
 [node name="Panel" type="Panel" parent="." unique_id=1447079879]
 layout_mode = 1
