@@ -2,6 +2,7 @@ extends Node
 
 var Coins = 0
 var Health = 100
+var Level = 0
 
 func addCoins(value):
 	Coins += value
@@ -12,3 +13,6 @@ func resetGame():
 
 func resetHealth():
 	Health = 100
+
+func levelUpgrade(value):
+	Level = value

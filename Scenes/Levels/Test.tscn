@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d4bywl27tia8a" path="res://Scenes/Objects/Coin.tscn" id="4_jrtxw"]
 [ext_resource type="PackedScene" uid="uid://dfnxyrya62mow" path="res://Scenes/UI/HUD.tscn" id="5_1hdcq"]
 [ext_resource type="Script" uid="uid://bdyhn5myco3u7" path="res://Scripts/Others/Killzone.gd" id="6_lje5a"]
+[ext_resource type="PackedScene" uid="uid://dcws23q6rb1jq" path="res://Scenes/Objects/Heart.tscn" id="6_tao1a"]
 [ext_resource type="FontFile" uid="uid://x6cp1ifynolo" path="res://Assets/UI/Font/BoldPixels/boldpixels.ttf" id="6_yo840"]
 [ext_resource type="PackedScene" uid="uid://45d8wj1fl6dq" path="res://Scenes/Characters/Enemies/Goblin.tscn" id="7_1yd5k"]
 [ext_resource type="Script" uid="uid://b2yhheqpybxko" path="res://Scripts/Others/Finish.gd" id="7_detqq"]
@@ -188,6 +189,17 @@ position = Vector2(3200, -152)
 [node name="Coin15" parent="Coins" unique_id=794781440 instance=ExtResource("4_jrtxw")]
 position = Vector2(3328, -152)
 
+[node name="Hearts" type="Node2D" parent="." unique_id=615192107]
+
+[node name="Heart" parent="Hearts" unique_id=205286347 instance=ExtResource("6_tao1a")]
+position = Vector2(1632, 88)
+
+[node name="Heart2" parent="Hearts" unique_id=935231536 instance=ExtResource("6_tao1a")]
+position = Vector2(2968, -40)
+
+[node name="Heart3" parent="Hearts" unique_id=1370435809 instance=ExtResource("6_tao1a")]
+position = Vector2(3520, -152)
+
 [node name="Enemies" type="Node2D" parent="." unique_id=189429496]
 
 [node name="Goblin" parent="Enemies" unique_id=2005260953 instance=ExtResource("7_1yd5k")]
@@ -207,6 +219,8 @@ shape = SubResource("WorldBoundaryShape2D_oybhc")
 
 [node name="Finish" type="Area2D" parent="." unique_id=525181009]
 script = ExtResource("7_detqq")
+nextLevel = "uid://drp65eapsnfu8"
+levelIncrease = 1
 
 [node name="Line" type="CollisionShape2D" parent="Finish" unique_id=1561028258]
 position = Vector2(3664, -161)

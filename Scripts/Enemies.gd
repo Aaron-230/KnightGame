@@ -63,6 +63,7 @@ func takeDamage(value):
 		isAlive = false
 		canAttack = false
 		Target = null
+		$CollisionShape.disabled = true
 		Sprite.play("Death")
 		await Sprite.animation_finished
 		await get_tree().create_timer(1).timeout

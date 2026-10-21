@@ -57,6 +57,9 @@ func takeDamage(value):
 		Game.resetGame()
 		get_tree().reload_current_scene()
 
+func Heal(value):
+	Game.Health += value
+
 func _on_attack_area_body_entered(body: Node2D) -> void:
 	if body.has_method("takeDamage") and body.name != "Player":
 		Target = body
