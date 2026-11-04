@@ -69,6 +69,12 @@ theme_override_fonts/font = ExtResource("1_bodif")
 theme_override_font_sizes/font_size = 20
 text = "Level 3"
 
+[node name="4" type="Button" parent="Panel/Container/Selection" unique_id=1319105644]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bodif")
+theme_override_font_sizes/font_size = 20
+text = "Level 4"
+
 [node name="Back" type="Button" parent="Panel/Container" unique_id=306597489]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_bodif")
@@ -76,7 +82,9 @@ theme_override_font_sizes/font_size = 20
 text = "Back"
 
 [connection signal="pressed" from="Panel/Container/Selection/Tutorial" to="Panel/Container/Selection" method="_on_tutorial_pressed"]
-[connection signal="pressed" from="Panel/Container/Selection/1" to="Panel/Container/Selection" method="_on__pressed"]
-[connection signal="pressed" from="Panel/Container/Selection/2" to="Panel/Container/Selection" method="_on__pressed"]
-[connection signal="pressed" from="Panel/Container/Selection/3" to="Panel/Container/Selection" method="_on__pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/1" to="Panel/Container/Selection" method="_on_one_pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/2" to="Panel/Container/Selection" method="_on_two_pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/3" to="Panel/Container/Selection" method="_on_three_pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/4" to="Panel/Container/Selection" method="_on_three_pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/4" to="Panel/Container/Selection" method="_on_four_pressed"]
 [connection signal="pressed" from="Panel/Container/Back" to="Panel/Container/Selection" method="_on_back_pressed"]
