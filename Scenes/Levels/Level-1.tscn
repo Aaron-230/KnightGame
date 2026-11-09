@@ -1606,5 +1606,7 @@ shape = SubResource("WorldBoundaryShape2D_75qqu")
 
 [node name="HUD" parent="." unique_id=338940241 instance=ExtResource("6_75qqu")]
 
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1633561312]
+
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

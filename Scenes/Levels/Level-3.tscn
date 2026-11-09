@@ -155,7 +155,7 @@ limit_bottom = 810
 [node name="Enemies" type="Node2D" parent="." unique_id=1163426132]
 
 [node name="Hobgoblin" parent="Enemies" unique_id=2005260953 instance=ExtResource("3_uevwl")]
-position = Vector2(778, 34)
+position = Vector2(796, 41)
 
 [node name="Hobgoblin2" parent="Enemies" unique_id=697106689 instance=ExtResource("3_uevwl")]
 position = Vector2(1525, -98)
@@ -189,24 +189,31 @@ autoplay = &"Move-2"
 
 [node name="Heart" parent="Hearts" unique_id=205286347 instance=ExtResource("5_am62g")]
 position = Vector2(1464, 280)
+healAmount = 20
 
 [node name="Heart2" parent="Hearts" unique_id=2132308933 instance=ExtResource("5_am62g")]
 position = Vector2(1096, -40)
+healAmount = 20
 
 [node name="Heart3" parent="Hearts" unique_id=2139340247 instance=ExtResource("5_am62g")]
 position = Vector2(2008, 312)
+healAmount = 20
 
 [node name="Heart4" parent="Hearts" unique_id=56279759 instance=ExtResource("5_am62g")]
 position = Vector2(2856, 136)
+healAmount = 20
 
 [node name="Heart5" parent="Hearts" unique_id=1911259297 instance=ExtResource("5_am62g")]
 position = Vector2(3528, -56)
+healAmount = 20
 
 [node name="Heart6" parent="Hearts" unique_id=60638112 instance=ExtResource("5_am62g")]
 position = Vector2(5088, -56)
+healAmount = 20
 
 [node name="Heart7" parent="Hearts" unique_id=849677420 instance=ExtResource("5_am62g")]
 position = Vector2(5816, -328)
+healAmount = 20
 
 [node name="Coins" type="Node2D" parent="." unique_id=1369258347]
 

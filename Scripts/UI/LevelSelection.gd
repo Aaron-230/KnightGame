@@ -20,4 +20,4 @@ func _on_three_pressed() -> void:
 
 func _on_four_pressed() -> void:
 	if Game.Level >= 4:
-		get_tree().change_scene_to_file("res://Scenes/Levels/Level-1.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Levels/Level-4.tscn")
