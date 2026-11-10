@@ -10,6 +10,8 @@
 [ext_resource type="Script" uid="uid://bdyhn5myco3u7" path="res://Scripts/Others/Killzone.gd" id="8_8gota"]
 [ext_resource type="Script" uid="uid://b2yhheqpybxko" path="res://Scripts/Others/Finish.gd" id="9_hcaby"]
 [ext_resource type="PackedScene" uid="uid://dfnxyrya62mow" path="res://Scenes/UI/HUD.tscn" id="10_4l3db"]
+[ext_resource type="AudioStream" uid="uid://dygtwmnengkwc" path="res://Assets/Music/Snowy.mp3" id="11_hcaby"]
+[ext_resource type="PackedScene" uid="uid://bdflef2mbcvqp" path="res://Scenes/UI/MobileControls.tscn" id="12_4l3db"]
 
 [sub_resource type="Animation" id="Animation_dis2o"]
 length = 0.001
@@ -559,6 +561,12 @@ position = Vector2(9150, -100)
 shape = SubResource("WorldBoundaryShape2D_evc0f")
 
 [node name="HUD" parent="." unique_id=338940241 instance=ExtResource("10_4l3db")]
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=601563657]
+stream = ExtResource("11_hcaby")
+autoplay = true
+
+[node name="Mobile Controls" parent="." unique_id=1196930815 instance=ExtResource("12_4l3db")]
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

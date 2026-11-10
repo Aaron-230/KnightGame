@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://dfnxyrya62mow" path="res://Scenes/UI/HUD.tscn" id="5_io0hp"]
 [ext_resource type="PackedScene" uid="uid://dcws23q6rb1jq" path="res://Scenes/Objects/Heart.tscn" id="5_vs31q"]
 [ext_resource type="PackedScene" uid="uid://d4bywl27tia8a" path="res://Scenes/Objects/Coin.tscn" id="5_wgrye"]
+[ext_resource type="AudioStream" uid="uid://t77x5trm0oe" path="res://Assets/Music/Ghost Fight.mp3" id="11_8yefm"]
+[ext_resource type="PackedScene" uid="uid://bdflef2mbcvqp" path="res://Scenes/UI/MobileControls.tscn" id="12_0rtsb"]
 
 [sub_resource type="Animation" id="Animation_rdrgj"]
 resource_name = "Metro1"
@@ -1004,6 +1006,12 @@ position = Vector2(8900, -100)
 shape = SubResource("WorldBoundaryShape2D_io0hp")
 
 [node name="HUD" parent="." unique_id=338940241 instance=ExtResource("5_io0hp")]
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1653909245]
+stream = ExtResource("11_8yefm")
+autoplay = true
+
+[node name="Mobile Controls" parent="." unique_id=1196930815 instance=ExtResource("12_0rtsb")]
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

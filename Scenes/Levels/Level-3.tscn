@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://dcws23q6rb1jq" path="res://Scenes/Objects/Heart.tscn" id="5_am62g"]
 [ext_resource type="PackedScene" uid="uid://dfnxyrya62mow" path="res://Scenes/UI/HUD.tscn" id="5_kca5f"]
 [ext_resource type="PackedScene" uid="uid://d4bywl27tia8a" path="res://Scenes/Objects/Coin.tscn" id="6_am62g"]
+[ext_resource type="AudioStream" uid="uid://d0jbfit80idbu" path="res://Assets/Music/Fallen Down.mp3" id="11_7xox2"]
+[ext_resource type="PackedScene" uid="uid://bdflef2mbcvqp" path="res://Scenes/UI/MobileControls.tscn" id="12_r725w"]
 
 [sub_resource type="Animation" id="Animation_4q6ab"]
 resource_name = "Move-1"
@@ -449,6 +451,12 @@ position = Vector2(6250, -100)
 shape = SubResource("WorldBoundaryShape2D_am62g")
 
 [node name="HUD" parent="." unique_id=338940241 instance=ExtResource("5_kca5f")]
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=621801644]
+stream = ExtResource("11_7xox2")
+autoplay = true
+
+[node name="Mobile Controls" parent="." unique_id=1196930815 instance=ExtResource("12_r725w")]
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]

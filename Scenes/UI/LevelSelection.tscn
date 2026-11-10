@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://drp65eapsnfu8"]
 
+[ext_resource type="VideoStream" uid="uid://cpreeel4rbgtx" path="res://Assets/Videos/Select.ogv" id="1_0yt1a"]
 [ext_resource type="FontFile" uid="uid://x6cp1ifynolo" path="res://Assets/UI/Font/BoldPixels/boldpixels.ttf" id="1_bodif"]
 [ext_resource type="Script" uid="uid://sigsvn4kcv82" path="res://Scripts/UI/LevelSelection.gd" id="2_m2yfs"]
+[ext_resource type="AudioStream" uid="uid://cxdj21j43pmuu" path="res://Assets/Music/sans.mp3" id="4_pnsx7"]
 
 [node name="Level" type="Control" unique_id=1350862919]
 layout_mode = 3
@@ -10,6 +12,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background" type="VideoStreamPlayer" parent="." unique_id=739963039]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_0yt1a")
+autoplay = true
+expand = true
+loop = true
 
 [node name="Panel" type="Panel" parent="." unique_id=696795316]
 layout_mode = 1
@@ -35,6 +49,8 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="Panel/Container" unique_id=1902196548]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("1_bodif")
 theme_override_font_sizes/font_size = 64
 text = "Select Level!"
@@ -81,10 +97,14 @@ theme_override_fonts/font = ExtResource("1_bodif")
 theme_override_font_sizes/font_size = 20
 text = "Back"
 
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=248012956]
+stream = ExtResource("4_pnsx7")
+autoplay = true
+
 [connection signal="pressed" from="Panel/Container/Selection/Tutorial" to="Panel/Container/Selection" method="_on_tutorial_pressed"]
 [connection signal="pressed" from="Panel/Container/Selection/1" to="Panel/Container/Selection" method="_on_one_pressed"]
 [connection signal="pressed" from="Panel/Container/Selection/2" to="Panel/Container/Selection" method="_on_two_pressed"]
 [connection signal="pressed" from="Panel/Container/Selection/3" to="Panel/Container/Selection" method="_on_three_pressed"]
-[connection signal="pressed" from="Panel/Container/Selection/4" to="Panel/Container/Selection" method="_on_three_pressed"]
 [connection signal="pressed" from="Panel/Container/Selection/4" to="Panel/Container/Selection" method="_on_four_pressed"]
+[connection signal="pressed" from="Panel/Container/Selection/4" to="Panel/Container/Selection" method="_on_three_pressed"]
 [connection signal="pressed" from="Panel/Container/Back" to="Panel/Container/Selection" method="_on_back_pressed"]

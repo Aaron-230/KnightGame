@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://bdflef2mbcvqp"]
+
+[ext_resource type="Script" uid="uid://bbvalch4c1gui" path="res://Scripts/UI/MobileControls.gd" id="1_cxu5g"]
+[ext_resource type="Texture2D" uid="uid://dns8e5i3xnge7" path="res://Assets/UI/Game Icons/PNG/White/2x/arrowLeft.png" id="1_scg6o"]
+[ext_resource type="Texture2D" uid="uid://c5gqww18ks15r" path="res://Assets/UI/Game Icons/PNG/Black/2x/arrowLeft.png" id="2_cxu5g"]
+[ext_resource type="Texture2D" uid="uid://dtutfip31ysry" path="res://Assets/UI/Game Icons/PNG/White/2x/arrowRight.png" id="3_adtlg"]
+[ext_resource type="Texture2D" uid="uid://6264fh7y15of" path="res://Assets/UI/Game Icons/PNG/Black/2x/arrowRight.png" id="4_5xst5"]
+[ext_resource type="Texture2D" uid="uid://0litgmd6kg1q" path="res://Assets/UI/Game Icons/PNG/White/2x/arrowUp.png" id="5_65ek1"]
+[ext_resource type="Texture2D" uid="uid://b4exayae7qgnc" path="res://Assets/UI/Game Icons/PNG/Black/2x/arrowUp.png" id="6_u7vfc"]
+
+[node name="Mobile Controls" type="CanvasLayer" unique_id=1196930815]
+script = ExtResource("1_cxu5g")
+
+[node name="Direction" type="HBoxContainer" parent="." unique_id=1537850944]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Left" type="TouchScreenButton" parent="Direction" unique_id=1378810139]
+position = Vector2(-180, -61)
+texture_normal = ExtResource("1_scg6o")
+texture_pressed = ExtResource("2_cxu5g")
+action = "Left"
+
+[node name="Right" type="TouchScreenButton" parent="Direction" unique_id=1485496934]
+position = Vector2(-60, -60)
+texture_normal = ExtResource("3_adtlg")
+texture_pressed = ExtResource("4_5xst5")
+action = "Right"
+
+[node name="Jump" type="TouchScreenButton" parent="." unique_id=1986180148]
+position = Vector2(-1, 621)
+texture_normal = ExtResource("5_65ek1")
+texture_pressed = ExtResource("6_u7vfc")
+action = "Jump"

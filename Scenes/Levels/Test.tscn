@@ -10,6 +10,8 @@
 [ext_resource type="FontFile" uid="uid://x6cp1ifynolo" path="res://Assets/UI/Font/BoldPixels/boldpixels.ttf" id="6_yo840"]
 [ext_resource type="PackedScene" uid="uid://45d8wj1fl6dq" path="res://Scenes/Characters/Enemies/Goblin.tscn" id="7_1yd5k"]
 [ext_resource type="Script" uid="uid://b2yhheqpybxko" path="res://Scripts/Others/Finish.gd" id="7_detqq"]
+[ext_resource type="AudioStream" uid="uid://bepuetylw8bjy" path="res://Assets/Music/Anticipation.mp3" id="11_js7sm"]
+[ext_resource type="PackedScene" uid="uid://bdflef2mbcvqp" path="res://Scenes/UI/MobileControls.tscn" id="12_6h7jm"]
 
 [sub_resource type="Animation" id="Animation_jrtxw"]
 resource_name = "Movement"
@@ -227,6 +229,12 @@ position = Vector2(3664, -161)
 shape = SubResource("WorldBoundaryShape2D_udc7x")
 
 [node name="HUD" parent="." unique_id=376237252 instance=ExtResource("5_1hdcq")]
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=2030880410]
+stream = ExtResource("11_js7sm")
+autoplay = true
+
+[node name="Mobile Controls" parent="." unique_id=1196930815 instance=ExtResource("12_6h7jm")]
 
 [connection signal="body_entered" from="Killzone" to="Killzone" method="_on_body_entered"]
 [connection signal="body_entered" from="Finish" to="Finish" method="_on_body_entered"]
