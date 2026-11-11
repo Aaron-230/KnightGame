@@ -17,7 +17,7 @@ Feel Free to try my Game and leave some Reviews and Recommendations for future U
 
 This game is made using Godot and You can play this game in [Itch.io](https://itch.io/). You can find the playable link after the Image
 
-![Startup Menu](SS.png)
+![Startup Menu](https://github.com/Aaron-230/KnightGame/blob/main/SS.PNG)
 
 [DEMO LINK!!!](https://lowspecdev.itch.io/knightgame)
 
