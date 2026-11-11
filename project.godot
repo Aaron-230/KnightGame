@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Knight Game"
-config/tags=PackedStringArray("in_development")
+config/tags=PackedStringArray("done")
 run/main_scene="uid://b4g54i1imo14v"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="uid://cvc7reodx2vem"
 
 [autoload]
 
